@@ -109,6 +109,100 @@ switch (domain) {
 }
 ```
 
+## while
+
+while 은 대괄호 안에 주어진 표현식의 값의 따라 반복을 제어할 수 있는 키워드이다.  
+
+```java
+while (expression) {
+    statement;
+}
+```
+
+표현식이 참인 경우, 명령문을 반복해서 실행한다.  
+
+## do while
+
+while 문을 변경한 것으로 반복을 제어할 수 있는 키워드이다.  
+
+```java
+do {
+    statement;
+} while (expression)
+```
+
+while 문과는 다르게 명령문을 최초 한번 실행하고, while 문의 표현식의 값의 따라 반복을 수행한다.  
+
+## for
+
+for 는 반복하는 횟수를 알고 있을 경우 반복을 제어할 수 있는 키워드이다.
+
+```java
+for (초기화; 조건식; 증감식) {
+    statement;
+}
+```
+
+for 문은 변수 초기화, 조건식, 증감식, 명령문과 같이 모두 네 부분으로 이루어져 있다.  
+1. 변수를 초기화한다. 이 단계는 처음 한 번만 수행된다.  
+2. 해당 변수가 조건식을 만족하는지 판단하고 true 이면 명령문을 수행한다.
+3. 해당 변수에 대하여 증감 연산을 수행한다.  
+4. `2번`과 `3번`을 반복하고 만약 조건식의 결과가 false 이면 for 문 전체를 빠져나가게 된다.
+
+#### 무한루프
+
+```java
+for ( ; ; ) {
+    statement;
+}
+```
+
+조건식이 없기 때문에 결과가 true 로 간주되어 명령문을 무한 반복 수행한다.  
+
+#### forEach
+
+```java
+for (String name : names) {
+    statement;
+}
+```
+
+데이터 컬렉션에 대한 탐색을 단순화 한다.  
+반복 횟수에 대하여 명시적이지 않으며, 명령문에서는 배열 또는 컬렉션을 하나씩 거치며 현재 값이 정의된 변수에 복사된다.  
+
+## break
+
+break 는 while, for 또는 switch 문에서 사용할 수 있으며 블럭을 종료할 수 있는 키워드이다.  
+
+```java
+while (true) {
+    statement;
+    
+    if (expression) {
+        break; // while 문 종료
+    }
+}
+```
+
+## continue
+
+continue 는 반복 중 특정 조건에 대하여 다음 명령문을 수행하지 않고 넘어 갈 수 있게 해주는 키워드이다.  
+for, while 문에서 함께 쓰인다.  
+
+```java
+while (true) {
+    statement;
+    
+    if (expression) {
+        continue;
+    }
+    
+    statement2;
+}
+```
+
+if 문의 표현식의 결과가 참이면 continue 가 실행되고, 뒤의 명령문(statement2)은 수행되지 않는다.
+
 <hr>
 
 #### References
