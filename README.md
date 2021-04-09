@@ -81,7 +81,7 @@ switch 문에는 다음과 같은 특징이 존재한다.
 
 ## switch expression
 
-자바 12 부터 break 대신 yield 문과 arror 를 사용한 switch 문이 추가되었다.  
+자바 12 부터 break 대신 yield 문과 arrow 를 사용한 switch 문이 추가되었다.  
 - yield: case 의 결과로 반환하고 싶은 값이 있을 경우 사용한다.  
 - ->: 콜론(:) 대신 사용할 수 있다.  
 
